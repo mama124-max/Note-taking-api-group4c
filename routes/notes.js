@@ -31,7 +31,17 @@ router.post("/", (req, res) => {
 // TODO: UPDATE a note partially (PATCH) — add your route here
 // router.patch("/:id", (req, res) => { ... });
 
-// TODO: DELETE a note — add your route here
-// router.delete("/:id", (req, res) => { ... });
+router.delete("/:id", (req, res) => {
+  const noteId = parseInt(req.params.id);
+  const index = notes.findIndex(n => n.id === noteId);
+  
+  if (index === -1) {
+    return res.status(404).json({ message: "Note not found" });
+  }
+  
+  const deletedNote = notes.splice(index, 1);
+  res.json({ message: "Note deleted successfully", deletedNote });
+});
+
 
 module.exports = router;
