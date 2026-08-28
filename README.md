@@ -1,3 +1,4 @@
+
 # Note-Taking API
 
 A simple Note-Taking API built with **Node.js** and **Express.js**.
@@ -423,3 +424,10 @@ This file contains the CRUD operations for the notes.
 **Group 4C**
 
 This project was created as a group project to practice building APIs with Express.js and implementing CRUD operations.
+
+# Note-taking-api-group4c
+Express.js Note-Taking API with full CRUD operations for Group 4C
+## Contributors
+
+- Livinus Iliya
+-Bharney
